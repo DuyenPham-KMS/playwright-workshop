@@ -8,8 +8,8 @@ import { test, expect } from '@playwright/test';
 //   Expected: the "My account" page is shown
 //
 // Change test.fixme to test, then write the steps.
-// Tip: the password field's label isn't connected to its input, so getByLabel won't find it.
-//      Use the locator ladder: what's the next-best option? (Pick locator in UI mode helps.)
+// Tip: both fields have proper labels — start at the top of the locator ladder.
+//      Pick locator in UI mode shows you what Playwright suggests.
 
 test.fixme('customer can log in and sees their account page', async ({ page }) => {
   // TODO 1: open the login page

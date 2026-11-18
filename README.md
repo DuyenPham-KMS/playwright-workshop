@@ -49,7 +49,7 @@ The site is **shared by the whole cohort** and its data is reset before every se
 playwright-workshop/
   tests/
     smoke.spec.ts          pre-work smoke test
-    session-1/             exercises and homework for Session 1
+    session-1/             in-class exercises (ex1–ex4) and homework for Session 1
   homework/session-1/      homework brief: manual test cases + scoring
   prework/                 TypeScript exercises + auto-grader
   docs/review-checklist.md what reviewers look for (grows each session)
@@ -74,20 +74,19 @@ playwright-workshop/
 
 To point tests at another Toolshop instance, copy `.env.example` to `.env` and change `BASE_URL`.
 
-## Checkpoint branches (in-class exercises)
+## In-class exercises
 
-Each in-class exercise has a start and a solution branch. Fall behind? Commit or stash your work, then jump:
+Each hands-on exercise is a file in `tests/session-<N>/`. The test starts as `test.fixme` with TODO comments:
+change it to `test`, fill in the steps, and run it.
 
-```bash
-git checkout s1-ex2-start      # start the next exercise from a known-good state
-git checkout s1-ex1-solution   # compare with the reference solution
-```
+| Session 1 exercise | File |
+|---|---|
+| 1 — Login | `tests/session-1/ex1-login.spec.ts` |
+| 2 — Search | `tests/session-1/ex2-search.spec.ts` |
+| 3 — Filter by category | `tests/session-1/ex3-filter.spec.ts` |
+| 4 — Locator review (rewrite brittle locators) | `tests/session-1/ex4-locator-review.spec.ts` |
 
-| Exercise | Start | Solution |
-|---|---|---|
-| S1 · Ex 1 — Login | `s1-ex1-start` | `s1-ex1-solution` |
-| S1 · Ex 2 — Search | `s1-ex2-start` | `s1-ex2-solution` |
-| S1 · Ex 3 — Filter | `s1-ex3-start` | `s1-ex3-solution` |
+Fell behind? Ask the instructor — reference solutions are shared after the exercise, not before.
 
 ## Homework and grading
 
